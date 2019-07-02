@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    >
+
+    <LinearLayout
+        android:id="@+id/sections_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/standard_margin"
+        android:paddingBottom="@dimen/standard_margin"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_size"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@string/title_1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_size"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@string/title_2"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_size"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@string/title_3"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
